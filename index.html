@@ -3,42 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Weather App</title>
   </head>
   <body>
-    <label for="search">Search Weather Information By Location:</label>
-    <input
-      type="text"
-      id="city"
-      class="city"
-      name="city"
-      placeholder="Search City"
-      required
-    />
-    <input
-      type="text"
-      id="state"
-      class="state"
-      name="state"
-      placeholder="Search State"
-      required
-    />
-    <input
-      type="text"
-      id="country"
-      class="country"
-      name="country"
-      placeholder="Search City"
-      required
-    />
-    <button class="search-btn">Search</button>
-    <button type="reset" class="reset-btn">Clear</button>
-
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-input" />
+        <button><img src="/images/magnify.svg" alt="" /></button>
+      </div>
+      <h1 class="weather">Weather in Brisbane</h1>
+      <div class="temp">19°C</div>
+      <img src="" alt="" class="icon" />
+      <div class="humidity">Humidity: 60%</div>
+      <div class="wind">Wind speed: 6.2 km/h</div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
