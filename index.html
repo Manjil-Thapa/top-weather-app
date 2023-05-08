@@ -2,29 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
     <title>Weather App</title>
   </head>
-  <body>
-    <div class="card">
-      <div class="search">
-        <input type="text" class="search-input" />
-        <button><img src="/images/magnify.svg" alt="" /></button>
+  <body class="blurred">
+    <header class="header">
+      <div class="header-left">
+        <img class="weather-icon large" src="" data-current-icon />
+        <div class="header-current-temp">
+          <span data-current-temp>13</span>&deg;
+        </div>
       </div>
-      <h1 class="weather">Weather in Brisbane</h1>
-      <div class="temp">19°C</div>
-      <img src="" alt="" class="icon" />
-      <div class="humidity">Humidity: 60%</div>
-      <div class="wind">Wind speed: 6.2 km/h</div>
-    </div>
-    <script src="app.js"></script>
+      <div class="header-right">
+        <div class="info-group">
+          <div class="label">High</div>
+          <div><span data-current-high>32</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">FL High</div>
+          <div><span data-current-fl-high>19</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">Wind</div>
+          <div>
+            <span data-current-wind>32</span
+            ><span class="value-sub-info">mph</span>
+          </div>
+        </div>
+        <div class="info-group">
+          <div class="label">Low</div>
+          <div><span data-current-low>32</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">FL Low</div>
+          <div><span data-current-fl-low>32</span>&deg;</div>
+        </div>
+        <div class="info-group">
+          <div class="label">Precipitation</div>
+          <div>
+            <span data-current-precip>32</span
+            ><span class="value-sub-info">in</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
